@@ -1,8 +1,10 @@
 .navXL {
     display: flex;
+    position: sticky;
+    top: 0;
     flex: 0.25;
     flex-direction: row;
-    background-color: rgba(255, 33, 155, 0.548);
+    background-color: rgba(255, 33, 155, 0.685);
     min-width: 100vh;
     min-height: 100px;
     color: rgb(118, 0, 122);
@@ -21,4 +23,11 @@
 .navS {
    color: rgb(71, 0, 104);
 
+}
+
+.navXS{
+    color: aliceblue;
+    background-color: blueviolet;
+    padding: 20px;
+    border-radius: 8px;
 }

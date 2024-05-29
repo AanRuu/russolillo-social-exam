@@ -15,7 +15,7 @@ function MainCard() {
       <div className="mainBox">
        {jsonData && jsonData.map((item) => (
         <div className="prova">
-        <div>{item.id}.{item.title}</div>
+        <div>{item.id}.{item.title} - {item.tags}</div>
         <div>{item.body}</div>
         <div className="reactions"><p className="reac">dislikes{item.reactions.dislikes}
         </p><p className="reac">likes{item.reactions.likes}</p></div>

@@ -12,7 +12,7 @@ function Navbar() {
                     IMMAGINE LOGO
                 </div>
                 <div className="navXS">
-                    NOME APP
+                    UPART
                 </div>
                 
             </nav>

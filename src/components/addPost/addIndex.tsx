@@ -35,7 +35,7 @@ function AddPost() {
   } else {
     return(
         <div className="addDiv">
-        falso
+        Pubblica un post C:
         <section className="sectBox">
          <input type="checkbox" id="checkbox" checked={isChecked}
                               onChange={checkHandler}/>
