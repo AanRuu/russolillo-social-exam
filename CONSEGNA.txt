@@ -1,0 +1,29 @@
+DETTAGLI CONSEGNA
+
+- Inviare mail a pietro.sardaro@lutech.it
+
+- Oggetto email: Consegna progetto <NOME> <COGNOME>
+- Messaggio email:
+        - Link del progetto GitHub
+        - Link del sito online
+
+
+*useContext *hooks
+
+
+   - UTILIZZA API GetAllPost
+            - Con la risposta creare un homepage     
+                    
+                    -navbar
+                        -Aggiunta post
+
+                    -posts
+                        -contenuto posts (cards)
+
+                    -footer
+
+                    {post}
+                    -titolo
+                    -contenuto
+                    -id
+                    (likes, dislikes, views,)

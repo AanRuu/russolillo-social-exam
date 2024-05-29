@@ -1,0 +1,155 @@
+.addDiv {
+    background-color: rgb(18, 235, 108);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 20px 0px 20px;
+    color: orangered;
+    
+}
+
+.sectBox {
+    margin: 8px;
+}
+
+#textarea {
+    width: 80%;
+    border: none;
+    background-color: rgb(255, 218, 224);
+    height: 400px;
+    padding: 40px;
+    
+}
+
+#textarea:focus {
+    border: 12px solid rgb(255, 167, 181);
+    outline: none;
+}
+
+#texttitolo {
+    width: 80%;
+    height: auto;
+    background-color: wheat;
+    border: none;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+#texttitolo:focus {
+    border: 12px solid rgb(255, 167, 181);
+    outline: none;
+}
+
+#texttags {
+    width: 80%;
+    height: auto;
+    background-color: azure;
+    border: none;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+#texttags:focus {
+    border: 12px solid rgb(255, 167, 181);
+    outline: none;
+    
+}
+
+
+
+
+
+
+
+
+button {
+    background: linear-gradient(to right, rgb(241, 225, 119), 
+    rgb(180, 67, 241));
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    margin: 20px;
+  }
+  
+  button:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+  }
+  
+  button:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+  }
+
+
+
+
+
+
+
+#checkbox {
+    display: none;
+  }
+  
+  .toggle {
+    position: relative;
+    width: 40px;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    height: calc(4px * 3 + 11px * 2);
+  }
+  
+  .bar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 4px;
+    border-radius: calc(4px / 2);
+    background: #7b52b9;
+    color: inherit;
+    opacity: 1;
+    transition: none 0.35s cubic-bezier(.5,-0.35,.35,1.5) 0s;
+  }
+  
+  /***** Spin Animation *****/
+  
+  .bar--top {
+    bottom: calc(50% + 11px + 4px/ 2);
+    transition-property: bottom,transform;
+    transition-delay: calc(0s + 0.35s),0s;
+  }
+  
+  .bar--middle {
+    top: calc(50% - 4px/ 2);
+    transition-property: opacity;
+    transition-delay: calc(0s + 0.35s);
+  }
+  
+  .bar--bottom {
+    top: calc(50% + 11px + 4px/ 2);
+    transition-property: top,transform;
+    transition-delay: calc(0s + 0.35s),0s;
+  }
+  
+  #checkbox:checked + .toggle .bar--top {
+    bottom: calc(50% - 4px/ 2);
+    transform: rotate(135deg);
+    transition-delay: 0s,calc(0s + 0.35s);
+  }
+  
+  #checkbox:checked + .toggle .bar--middle {
+    opacity: 0;
+    transition-duration: 0s;
+    transition-delay: calc(0s + 0.35s);
+  }
+  
+  #checkbox:checked + .toggle .bar--bottom {
+    top: calc(50% - 4px/ 2);
+    transform: rotate(225deg);
+    transition-delay: 0s,calc(0s + 0.35s);
+  }

@@ -1,0 +1,24 @@
+.cardBox {
+    
+    height: auto;
+    flex: 0.9;
+    margin: 0;
+    background-color: violet;
+    z-index: 100;
+    padding: 20px;
+    flex-wrap: wrap;
+    min-width: 140px;
+  
+}
+
+.sectCard {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.titleCard {
+    gap: 20px;
+}
+
+

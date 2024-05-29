@@ -1,0 +1,24 @@
+.navXL {
+    display: flex;
+    flex: 0.25;
+    flex-direction: row;
+    background-color: rgba(255, 33, 155, 0.548);
+    min-width: 100vh;
+    min-height: 100px;
+    color: rgb(118, 0, 122);
+    font-family: sans-serif;
+    flex-wrap: wrap;
+}
+
+.nav {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.navS {
+   color: rgb(71, 0, 104);
+
+}
