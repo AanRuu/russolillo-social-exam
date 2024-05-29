@@ -1,5 +1,6 @@
 import React from "react";
 import './style.css'
+import AddPost from "../addPost/addIndex";
 
 
 
@@ -8,11 +9,12 @@ function Navbar() {
 
         <div className="navXL">
             <nav className="nav">
-                <div className="navS">
-                    IMMAGINE LOGO
-                </div>
                 <div className="navXS">
-                    UPART
+                    UPArt
+                </div>
+                <div className="add">
+                <AddPost/>
+
                 </div>
                 
             </nav>

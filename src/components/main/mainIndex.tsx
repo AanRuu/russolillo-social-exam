@@ -13,12 +13,14 @@ function MainCard() {
     return(
 
       <div className="mainBox">
-       {jsonData && jsonData.map((item) => (
+       {jsonData && jsonData.slice().reverse().map((item) => (
         <div className="prova">
-        <div>{item.id}.{item.title} - {item.tags}</div>
+        <div>piece of art n.{item.id}<h2>{item.title}</h2>
+        <p>#{item.tags}</p>
+        wrote by artist n.{item.userId}</div>
         <div>{item.body}</div>
-        <div className="reactions"><p className="reac">dislikes{item.reactions.dislikes}
-        </p><p className="reac">likes{item.reactions.likes}</p></div>
+        <div className="reactions"><p className="reac">{item.reactions.dislikes}|づ◡﹏◡|づ✧
+        </p><p className="reac">ദ്ദി|˵ •̀ ᴗ - ˵ | ✧{item.reactions.likes}</p></div>
         </div>
        ))}
           </div>

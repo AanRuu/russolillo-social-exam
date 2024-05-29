@@ -33,7 +33,6 @@ useEffect(() => {
     <div className='App'>
     <Navbar />
 
-    <AddPost/>
 
     <MainCard/>
     

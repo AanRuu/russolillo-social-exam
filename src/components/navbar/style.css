@@ -1,33 +1,47 @@
+
+  
+
+
 .navXL {
     display: flex;
     position: sticky;
     top: 0;
     flex: 0.25;
     flex-direction: row;
-    background-color: rgba(255, 33, 155, 0.685);
+    background: linear-gradient(to  right, orangered, 
+    rgb(255, 0, 157));
     min-width: 100vh;
-    min-height: 100px;
+    min-height: 80px;
+    max-height: auto;
     color: rgb(118, 0, 122);
-    font-family: sans-serif;
+    font-family: "Major Mono Display", monospace;
+    font-size: 200%;
     flex-wrap: wrap;
+    z-index: 500;
+    padding: 0px;
+    
 }
 
 .nav {
     display: flex;
     flex: 1;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 100px;
+    
 }
 
-.navS {
-   color: rgb(71, 0, 104);
-
+.add{
+    display: flex;
+    
 }
 
 .navXS{
     color: aliceblue;
-    background-color: blueviolet;
+    background: linear-gradient(to bottom right, rgb(111, 2, 255), 
+    rgb(13, 41, 0));
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 2px;
+    z-index: 1000;
+    margin: 0;
+   
 }

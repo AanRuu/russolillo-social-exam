@@ -2,41 +2,52 @@
     
     padding: 40px;
     margin: 20px;
-    gap: 20px;
-    background-color: aquamarine;
+    gap: 80px;
+    background: linear-gradient(to bottom right, rgb(142, 252, 53), 
+    rgb(142, 255, 142));
     justify-content: center;
     align-items: center;
     display: grid;
+    
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 
 }
 
-
-
+h2 {
+    font-family: "Jacquard 12", system-ui;
+    color: rgb(201, 0, 201);
+}
 
 .prova {
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color: rgb(135, 135, 224);
+    background: linear-gradient(to bottom right, rgb(152, 73, 255), 
+    rgba(7, 126, 7, 0.397));
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr ;
-    padding: 20px;
+    padding: 40px;
     width: 80%;
     height: 90%;
-    border-radius: 80px 80px 8px 8px ;
-    transition: 4s;
+    border-radius: 4px ;
+    transition: 2s;
+    font-family: serif;
 }
 
 .prova:hover{
-    transition: 4s;
-    background-color: rgba(255, 70, 215, 0.959);
+    transition: 2s;
+    background: linear-gradient(to bottom right,rgb(255, 80, 16), 
+    rgba(227, 12, 255, 0.397));
     scale: 120%;
-    box-shadow: 0px 0px 100px rgba(70, 70, 70, 0.87);
-    
-   
+    box-shadow: 0px 0px 100px rgb(61, 222, 61);
+}
+
+.prova:hover h2{
+    transition: 2s;
+    color: rgb(0, 0, 0);
+    text-decoration: underline blueviolet;
 }
 
 .reactions {
