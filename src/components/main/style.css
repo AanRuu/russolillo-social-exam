@@ -1,22 +1,71 @@
-*.mainBox {
+.absolute {
+    position: absolute;
+    top:-12px;
+}
+
+.mainBox {
     
     padding: 40px;
     margin: 20px;
-    gap: 80px;
-    background: linear-gradient(to bottom right, rgb(142, 252, 53), 
-    rgb(142, 255, 142));
+    gap: 100px;
+    background: linear-gradient(to bottom right, rgba(71, 201, 89, 0.712), 
+    rgb(255, 135, 87));
     justify-content: center;
     align-items: center;
     display: grid;
-    
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-
+    padding-top: 200px;
 }
+
+
+
+.testo {
+    font-size: 0px;
+    color: rgb(0, 0, 0);
+    transition:all 2s;
+    
+  
+   
+}
+
+.prova:hover .testo {
+    color: rgb(255, 255, 255);
+    transition:all 2s;
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+    border-image: linear-gradient(to right to left, #000 50%, transparent 50%) 100% 1;
+    display: initial;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+
 
 h2 {
     font-family: "Jacquard 12", system-ui;
-    color: rgb(201, 0, 201);
+    color:rgba(0, 255, 0, 0.747);
+    font-size: 250%;
+    text-decoration: underline dotted blueviolet;
+    transition: all 2s;
+    font-weight: 300;
+}
+
+
+
+.prova:hover h2{
+    transition: all 2s;
+    color: rgb(0, 0, 0);
+    text-decoration: 4px wavy underline rgb(255, 0, 179);
+}
+
+.tagss {
+    font-family: monospace;
+}
+
+.eye{
+    width: 20px;
+    height: 20px;
 }
 
 .prova {
@@ -24,15 +73,15 @@ h2 {
     justify-content: center;
     align-items: center;
     background: linear-gradient(to bottom right, rgb(152, 73, 255), 
-    rgba(7, 126, 7, 0.397));
+    rgba(1, 119, 1, 0.445));
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr ;
     padding: 40px;
     width: 80%;
     height: 90%;
-    border-radius: 4px ;
-    transition: 2s;
+    border-radius: 5px 80px 5px 10px;
+    transition: all 2s;
     font-family: serif;
 }
 
@@ -41,14 +90,10 @@ h2 {
     background: linear-gradient(to bottom right,rgb(255, 80, 16), 
     rgba(227, 12, 255, 0.397));
     scale: 120%;
-    box-shadow: 0px 0px 100px rgb(61, 222, 61);
+    box-shadow: 0px 0px 100px rgb(0, 0, 0);
 }
 
-.prova:hover h2{
-    transition: 2s;
-    color: rgb(0, 0, 0);
-    text-decoration: underline blueviolet;
-}
+
 
 .reactions {
     display: flex;
@@ -64,6 +109,27 @@ h2 {
     padding-left: 20px;
     padding-bottom: 20px;
     padding-right: 20px;
+    color: rgb(255, 217, 0);
     
 }
 
+.prova:hover .reac {
+    transition: 2s;
+    color: rgb(2, 255, 234);
+}
+
+@media screen and (max-width: 600px) {
+    .absolute{
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        position: initial;
+    }
+
+    .mainBox{
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+  }

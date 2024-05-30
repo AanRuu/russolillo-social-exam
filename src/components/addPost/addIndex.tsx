@@ -30,6 +30,12 @@ function AddPost() {
     setContTagsPost(input);
   }
 
+
+  function canc() {
+    setContPost('');
+    setContTitlePost('');
+    setContTagsPost('');
+  }
  // function addUserId(input:number) {
  //   setUserId(input);
  // }
@@ -52,6 +58,7 @@ function AddPost() {
         post.push(obj)
         setJsonData([...post])
     }
+    canc()
 }
 
 //  <textarea name="textare" id="texttags"  onChange={(event) => addUserId(event.target.value)} value={contUserId}*/ placeholder="artist id..."></textarea>
@@ -73,14 +80,17 @@ function AddPost() {
            </label>
            </section>
            <section className="form">
-        
-            <textarea name="textare" id="texttitolo"onChange={(event) => addTitle(event.target.value)} /*</div>value={contTitlePost}*/ placeholder="titolo..."></textarea>
-            <textarea name="textare" id="textarea" onChange={(event) => addText(event.target.value)} /*value={contPost}*/ placeholder="scrivi qui..."></textarea>
-            <textarea name="textare" id="texttags" onChange={(event) => addTags(event.target.value)} /*value={contTagsPost}*/ placeholder="tags..."></textarea>
-           
+           <div className="lilText">
+           <textarea name="textare"  id="texttitolo"onChange={(event) => addTitle(event.target.value)} value={contTitlePost} placeholder="titolo..."></textarea>
+            <textarea name="textare" id="texttags" onChange={(event) => addTags(event.target.value)} value={contTagsPost} placeholder="tags..."></textarea>
+            <button onClick={() => save()} >post it C:</button>
+          </div>
+            <textarea name="textare" id="textarea" onChange={(event) => addText(event.target.value)} value={contPost} placeholder="scrivi qui..."></textarea>
+            
   
-            <button onClick={() => save()}>pubblica C:</button>
+           
             </section>
+           
             
         </div>
     )

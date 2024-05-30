@@ -4,8 +4,7 @@
 
 .navXL {
     display: flex;
-    position: sticky;
-    top: 0;
+    
     flex: 0.25;
     flex-direction: row;
     background: linear-gradient(to  right, orangered, 
@@ -27,21 +26,30 @@
     flex: 1;
     justify-content: space-between;
     align-items: center;
-    
-}
-
-.add{
-    display: flex;
-    
-}
-
-.navXS{
-    color: aliceblue;
-    background: linear-gradient(to bottom right, rgb(111, 2, 255), 
-    rgb(13, 41, 0));
-    padding: 20px;
-    border-radius: 2px;
-    z-index: 1000;
+    padding: 0;
     margin: 0;
-   
+    
 }
+@media screen and (max-width: 600px) {
+    .navXL {
+     display: flex;
+     flex-direction: column;
+     justify-content: start;
+      
+      
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

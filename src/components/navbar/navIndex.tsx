@@ -8,10 +8,12 @@ function Navbar() {
     return (
 
         <div className="navXL">
+          
             <nav className="nav">
-                <div className="navXS">
-                    UPArt
-                </div>
+                
+         
+                
+                
                 <div className="add">
                 <AddPost/>
 

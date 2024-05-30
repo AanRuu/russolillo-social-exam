@@ -1,0 +1,33 @@
+.navXS{
+    display: flex;
+    position: sticky;
+    left: 0;
+    top: 20px;
+    color: aliceblue;
+    background: linear-gradient(to bottom right, rgb(112, 2, 255), 
+    rgba(13, 41, 0, 0.616));
+    padding: 20px;
+    border-radius: 0px 40px 0 0;
+    z-index: 1000;
+    margin: 0;
+    font-size: 60px;
+    font-family: "Major Mono Display", monospace;
+   width: 20%;
+   
+}
+
+.top{
+    justify-content: space-between;
+    display: flex;
+    position: sticky;
+    top: 20px;
+    z-index: 1000;
+}
+
+@media screen and (max-width: 600px) {
+    .top {
+      display: flex;
+      flex-direction: column;
+     
+    }
+  }

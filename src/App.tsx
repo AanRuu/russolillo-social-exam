@@ -8,6 +8,7 @@ import MainCard from './components/main/mainIndex';
 import AddPost from './components/addPost/addIndex';
 import { Post, TPost } from '../src/commonTypes'
 import { AppContext } from './appContext';
+import Upart from './components/upart/upart';
 
 
 
@@ -31,12 +32,13 @@ useEffect(() => {
   return (
     <AppContext.Provider value={data}>
     <div className='App'>
-    <Navbar />
+    
+    
 
-
+    <Upart/>
     <MainCard/>
     
-    <Footer />
+    
     </div>
     </AppContext.Provider>
   );

@@ -1,80 +1,97 @@
+
+
 .addDiv {
     display: flex;
     flex-direction: row;
     background: linear-gradient(to  right, rgb(152, 73, 255), 
-    rgb(18, 235, 108));
+    rgba(18, 235, 109, 0.281));
     width: 100vh;
     height: 40p;
-    justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding-left: 40px;
-    padding-right: 120px;
-    border-radius: 0px;
-    margin-top: 0px;
-    color: orangered;
-    
-    
-    
+    padding-bottom: 8px;
+    border-radius: 40px 0 0 0;
+    color: rgb(255, 207, 190);
+    padding-left: 20px;
+
 }
 
 .banner {
- 
+ font-weight: bold;
   font-family: "Major Mono Display", monospace;
   
+}
+
+.lilText {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
 }
 
 .form {
   display:grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr ;
   justify-content: center;
   align-items: center;
 }
 
 .sectBox {
-    margin: 8px;
+    margin: 10px;
 }
 
 #textarea {
-    width: 100px;
-    height: 100px;
+    min-width: 400px;
+    min-height: 80px;
+    max-width: 400px;
+    max-height: 80px;
     border: none;
-    background-color: rgb(255, 218, 224);
+    background-color: rgba(255, 218, 224, 0.24);
+    margin-right: 40px;
+    resize: none;
 
     
 }
 
 #textarea:focus {
-    border: 12px solid rgb(255, 167, 181);
+    border-bottom: 4px solid rgb(255, 167, 181);
     outline: none;
+    background-color: aliceblue;
 }
 
 #texttitolo {
-  width: 100px;
-    height: 100px;
-    
-  
-    background-color: wheat;
+    width: 250px;
+    max-width: 250px;
+    min-width: 250px;
+    height: 20px;
+    max-height: 20px;
+    min-height: 20px;
+    background-color: rgba(245, 222, 179, 0.151);
     border: none;
-   
+    resize: none;
 }
 #texttitolo:focus {
-    border: 12px solid rgb(255, 167, 181);
+    border-bottom: 4px solid rgb(255, 167, 181);
     outline: none;
+    background-color: aliceblue;
 }
 
 #texttags {
-    width: 100px;
-    height: 100px;
-    background-color: azure;
+  width: 250px;
+  max-width: 250px;
+  min-width: 250px;
+  height: 20px;
+  max-height: 20px;
+  min-height: 20px;
+    background-color: rgba(240, 255, 255, 0.267);
     border: none;
-  
+    resize: none;
 }
 
 #texttags:focus {
-    border: 12px solid rgb(255, 167, 181);
+    border-bottom: 4px solid rgb(255, 167, 181);
     outline: none;
+    background-color: aliceblue;
     
 }
 
@@ -86,15 +103,18 @@
 
 
 button {
-    background: linear-gradient(to right, rgb(221, 253, 255), 
+    background: linear-gradient(to right, rgb(243, 161, 239), 
     rgb(180, 67, 241));
     font-family: inherit;
     padding: 0.6em 1.3em;
     font-weight: 900;
     height: 100%;
-    border: 2px solid rgb(26, 201, 26);
+    border: 2px solid rgba(253, 253, 253, 0.39);
     border-radius: 0.4em;
     box-shadow: 0.1em 0.1em;
+    margin: 0;
+    max-width: 255px;
+   
     
   }
   
@@ -134,7 +154,7 @@ button {
     right: 0;
     height: 4px;
     border-radius: calc(4px / 2);
-    background: #330075;
+    background: orangered;
     color: inherit;
     opacity: 1;
     transition: none 0.35s cubic-bezier(.5,-0.35,.35,1.5) 0s;
@@ -176,4 +196,137 @@ button {
     top: calc(50% - 4px/ 2);
     transform: rotate(225deg);
     transition-delay: 0s,calc(0s + 0.35s);
+  }
+
+  @media screen and (max-width: 600px) {
+  
+.addDiv {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to  right, rgb(152, 73, 255), 
+  rgba(18, 235, 109, 0.281));
+  width: 100vh;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+  padding-bottom: 0px;
+  border-radius: 40px 0 0 0;
+  color: rgb(255, 207, 190);
+  padding-left: 0px;
+
+
+}
+
+.banner {
+font-weight: bold;
+font-family: "Major Mono Display", monospace;
+
+}
+
+.lilText {
+display: flex;
+flex-direction: column;
+margin-left: 0px;
+}
+
+.form {
+display:grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr ;
+justify-content: left;
+align-items: left;
+}
+
+.sectBox {
+  margin: 0px;
+}
+
+#textarea {
+  min-width: 80px;
+  min-height: 80px;
+  max-width: 80px;
+  max-height: 80px;
+  border: none;
+  background-color: rgba(255, 218, 224, 0.24);
+  margin-right: 0px;
+  resize: none;
+
+  
+}
+
+#textarea:focus {
+  border-bottom: 4px solid rgb(255, 167, 181);
+  outline: none;
+  background-color: aliceblue;
+}
+
+#texttitolo {
+  width: 80px;
+  max-width: 80px;
+  min-width: 80px;
+  height: 20px;
+  max-height: 20px;
+  min-height: 20px;
+  background-color: rgba(245, 222, 179, 0.151);
+  border: none;
+  resize: none;
+}
+#texttitolo:focus {
+  border-bottom: 4px solid rgb(255, 167, 181);
+  outline: none;
+  background-color: aliceblue;
+}
+
+#texttags {
+width: 80px;
+max-width: 80px;
+min-width: 80px;
+height: 20px;
+max-height: 20px;
+min-height: 20px;
+  background-color: rgba(240, 255, 255, 0.267);
+  border: none;
+  resize: none;
+}
+
+#texttags:focus {
+  border-bottom: 4px solid rgb(255, 167, 181);
+  outline: none;
+  background-color: aliceblue;
+  
+}
+
+
+
+
+
+
+
+
+button {
+  background: linear-gradient(to right, rgb(243, 161, 239), 
+  rgb(180, 67, 241));
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  height: 100%;
+  border: 2px solid rgba(253, 253, 253, 0.39);
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  margin: 0;
+  max-width: 255px;
+ 
+  
+}
+
+button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+
   }
